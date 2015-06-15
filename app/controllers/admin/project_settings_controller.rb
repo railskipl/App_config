@@ -6,11 +6,11 @@ before_filter :authenticate_admin!
 
 	def show
 		@settings = ProjectSetting.find(params[:id])
-		@setting =  Hash["configs" => [{"id": @settings.id,"mobile_app_restrict": @settings.access,"created_at": @settings.created_at,"updated_at": @settings.updated_at}]] if @settings.present?
+		@setting = Hash["configs" => @settings]
 			respond_to do |format|
 			format.html
 			format.json { render json: @setting }
-			end
+		end
 	end
 
 	def new
