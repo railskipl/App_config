@@ -1,5 +1,5 @@
 class Admin::ProjectSettingsController < ApplicationController
-before_filter :authenticate_admin!
+before_filter :authenticate_admin! ,:except => [:show]
 	def index
 		@settings = ProjectSetting.all	
 	end
@@ -7,7 +7,8 @@ before_filter :authenticate_admin!
 	def show
 		@settings = ProjectSetting.find(params[:id])
 		@setting = Hash["configs" => @settings]
-			respond_to do |format|
+		
+		respond_to do |format|
 			format.html
 			format.json { render json: @setting }
 		end
