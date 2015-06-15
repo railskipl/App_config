@@ -1,0 +1,9 @@
+<p>
+  <strong>Project Name: </strong>
+  <%= @settings.project_name %>
+</p>
+<p>
+  <strong>Access Status: </strong>
+  <%= @settings.access %>
+</p>
+<%= link_to 'Edit', edit_admin_project_setting_path(@settings) ,:class => "btn" %>

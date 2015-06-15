@@ -1,0 +1,23 @@
+<%= form_for [:admin,@setting] ,:html => { :multipart => true } do |f| %>
+
+      <div class="control-group">
+        <%= f.label :project_name%>
+        <div class="controls">
+          <%= f.text_field :project_name%>
+        </div>
+      </div>
+
+     <div class="field">
+        <h3>Restrict Project Access :</h3>
+        <%= f.select( :access, { "Yes" => true, "No" => false}) %>
+    </div><br>
+
+
+       
+     <div class="form-actions">
+      <%= f.submit "Submit" %>
+     </div>
+ 
+
+
+<% end %>
