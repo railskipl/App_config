@@ -6,7 +6,7 @@ before_filter :authenticate_admin! ,:except => [:show]
 
 	def show
 		@settings = ProjectSetting.find(params[:id])
-		@setting = Hash["configs" => @settings]
+		@setting = Hash["configs" => [@settings]]
 		
 		respond_to do |format|
 			format.html
