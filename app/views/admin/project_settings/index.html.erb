@@ -6,7 +6,7 @@
 <tr>
 
 <td><%= setting.project_name%></td>
-<td><%= setting.access == true ? 'Yes' : 'No' %></td>
+<td><%= setting.access == true ? 'NO' : 'Yes' %></td>
 <td><%= link_to 'Edit', edit_admin_project_setting_path(setting) ,:class => "btn" %></td>
 </tr>
 <% end %>
