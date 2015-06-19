@@ -1,0 +1,26 @@
+
+body{font-family:Arial, Helvetica, sans-serif;font-size:14px;margin:0px;padding:0px;}
+a{text-decoration:none;}
+.wrapper-top{margin:0px;padding:0px;background:#484848;}
+.top-header{margin:0px auto;padding:0px;width:1200px;height:100px;}
+.logo1{float:left;padding:15px 0px 0px;}
+.log-out{margin:0px;padding:40px 0px 0px;float:right;}
+.log-out a{font-size:18px;color:#ffffff;}
+.log-out a:hover{font-size:18px;color:#d6002d;text-decoration:underline;}
+
+.wrapper-content2{margin:0px;padding:0px;}
+.content2{margin:0px auto;padding:10px 0px;width:1200px;}
+td{padding:5px;border:#dadada 1px solid;}
+.col-bg1{background:#ca8000;color:#ffffff;padding:7px 5px;font-weight:bold;}
+.btn2{color:#ffffff;background:#4e9400;padding:2px 10px;border-radius:3px;border:0px;}
+.btn2:hover{color:#ffffff;background:#5bac00;}
+.btn3{color:#ffffff;background:#cd3500;padding:2px 10px;border-radius:3px;border:0px;}
+.btn3:hover{color:#ffffff;background:#e43c02;}
+.btn4{color:#ffffff;background:#4e9400;padding:5px 10px;border-radius:3px;border:0px;}
+.btn4:hover{color:#ffffff;background:#5bac00;}
+
+.wrapper-bottom{margin:0px;padding:0px;background:#484848;width: 100%;height: 40px;position: absolute;bottom: 0px;left: 0px;}.bottom-footer{margin:0px auto;padding:10px 0px;width:1200px;height:20px;}
+.copy{float:left;color:#ffffff;}
+.design{float:right;color:#ffffff;}
+.design a{color:#ffffff;}
+.design a:hover{color:#f59910;}

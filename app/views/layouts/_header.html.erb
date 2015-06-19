@@ -1,5 +1,15 @@
-	  <% if admin_signed_in? %>
-	    <%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
-	  <% else %>
-	    <li><%= link_to "Sign in", new_admin_session_path %></li>
-	  <% end %>
+<div class="wrapper-top">
+	<div class="top-header">
+    	<div class="logo1">
+        	<a href="#"><img src="/assets/kipl-logo2.png" alt=""></a>
+        </div>
+    	<div class="log-out">
+       	<% if admin_signed_in? %>
+	    	<%= link_to "Logout", destroy_admin_session_path, :method => :delete %>
+	  	<% else %>
+	    	<li><%= link_to "Sign in", new_admin_session_path %></li>
+	  	<% end %>
+
+        </div>
+    </div>
+</div>

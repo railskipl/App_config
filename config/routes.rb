@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, controllers: {sessions: "sessions"}
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

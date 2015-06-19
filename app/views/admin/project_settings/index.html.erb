@@ -1,15 +1,23 @@
-<br/>
-<table>
- <%= link_to 'New', new_admin_project_setting_path ,:class => "btn" %>
-<tbody>
-<% @settings.each do |setting| %>
-<tr>
-
-<td><%= setting.project_name%></td>
-<td><%= setting.access == true ? 'NO' : 'Yes' %></td>
-<td><%= link_to 'Edit', edit_admin_project_setting_path(setting) ,:class => "btn" %></td>
-</tr>
-<% end %>
-</tbody>
-</table>
-<br/>
+<div class="wrapper-content2">
+	<div class="content2">
+    	<div>
+    		<%= link_to 'Add New Project', new_admin_project_setting_path, :class => "btn4"%>
+        </div>
+    	
+		<table cellpadding="0" cellspacing="0" style="border:#dadada 1px solid;width:50%;margin-top:50px;">
+        	<tr>
+            	<td width="35%" class="col-bg1">Projects </td>
+                <td width="35%" class="col-bg1">App Status</td>
+                <td width="30%" class="col-bg1">Action</td>
+            </tr>
+            
+            <% @settings.each do |setting| %>
+				<tr>
+				<td><%= setting.project_name%></td>
+				<td><%= setting.access == true ? 'App Stopped' : 'App Running' %></td>
+				<td><%= link_to 'Edit', edit_admin_project_setting_path(setting), :class =>'btn2'%></td>
+				</tr>
+			<% end %>
+        </table>
+    </div>
+</div>
